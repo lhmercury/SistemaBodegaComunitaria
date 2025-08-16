@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+/* frontend/src/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6; /* Un color de fondo suave para toda la página */
+}
+
+/* Estilos globales para inputs y botones si no se sobrescriben con Tailwind */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    @apply rounded-md border border-gray-300 px-3 py-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm;
+}
+
+button {
+    @apply rounded-md px-4 py-2 text-white font-medium shadow-sm transition duration-150 ease-in-out;
+}

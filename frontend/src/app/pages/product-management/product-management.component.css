@@ -1,0 +1,27 @@
+/* frontend/src/app/pages/product-management/product-management.component.css */
+
+/* Define una animación para un efecto de "pulso" en los botones */
+@keyframes pulse-once {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(100, 116, 139, 0.4);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(100, 116, 139, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(100, 116, 139, 0);
+  }
+}
+
+/* Aplica la animación a un botón con la clase 'btn-pulse' */
+.btn-pulse {
+  animation: pulse-once 0.5s ease-in-out;
+}
+
+/* Opcional: Estilo para resaltar un campo de entrada con error */
+.input-error {
+  border-color: #dc2626; /* Rojo de Tailwind 600 */
+}
